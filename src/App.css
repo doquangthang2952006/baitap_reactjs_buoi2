@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.model-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.model {
+    position: relative;
+    width: 250px;
+}
+
+.model-img {
+    width: 100%;
+}
+
+.glasses-overlay {
+    position: absolute;
+    top: 70px;
+    left: 55px;
+    width: 140px;
+    opacity: 0.8;
+}
+
+.glasses-info {
+    margin-left: 20px;
+    background: rgba(255, 165, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 250px;
+    border-radius: 5px;
+}
