@@ -1,46 +1,50 @@
 .App {
-    text-align: center;
-    background-color: #f0f0f0;
-    min-height: 100vh;
-    padding: 20px;
+text-align: center;
+background-color: #f0f0f0;
+min-height: 100vh;
+padding: 20px;
 }
 
 .title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+font-size: 2rem;
+color: #333;
+margin-bottom: 20px;
 }
 
 .model-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
 }
 
 .model {
-    position: relative;
-    width: 250px;
+position: relative;
+width: 250px;
 }
 
 .model-img {
-    width: 100%;
+width: 100%;
 }
 
 .glasses-overlay {
-    position: absolute;
-    top: 70px;
-    left: 55px;
-    width: 140px;
-    opacity: 0.8;
+position: absolute;
+top: 70px;
+left: 55px;
+width: 140px;
+opacity: 0.8;
 }
 
 .glasses-info {
-    margin-left: 20px;
+    position: absolute;
+    top: 200px; /* Điều chỉnh vị trí từ trên xuống */
+    left: 0;
+    width: 100%;
     background: rgba(255, 165, 0, 0.8);
     color: white;
-    padding: 10px;
+    padding: 0; /* Giảm padding để làm gọn lại */
     text-align: left;
-    width: 250px;
     border-radius: 5px;
+    font-size: 12px; /* Giảm kích thước font */
 }
+

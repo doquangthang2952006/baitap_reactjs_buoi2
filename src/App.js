@@ -12,21 +12,22 @@ function App() {
             <div className="model-section">
                 <div className="model">
                     <img src="/glassesImage/model.jpg" alt="model" className="model-img" />
+                    
                     {selectedGlasses && (
                         <>
-                            <img src={selectedGlasses.url} alt="selected" className="glasses-overlay" />
+                            <img
+                                src={selectedGlasses.url}
+                                alt="selected"
+                                className="glasses-overlay"
+                            />
+                            <div className="glasses-info">
+                                <h3>{selectedGlasses.name}</h3>
+                                <p>{selectedGlasses.desc}</p>
+                                <p>Price: ${selectedGlasses.price}</p>
+                            </div>
                         </>
                     )}
                 </div>
-
-                {/* Thông tin kính nằm bên phải ảnh mẫu */}
-                {selectedGlasses && (
-                    <div className="glasses-info">
-                        <h3>{selectedGlasses.name}</h3>
-                        <p>{selectedGlasses.desc}</p>
-                        <p>Price: ${selectedGlasses.price}</p>
-                    </div>
-                )}
             </div>
             <GlassesList glassesData={dataGlasses} onSelect={setSelectedGlasses} />
         </div>
